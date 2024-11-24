@@ -235,7 +235,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/2024/11/24/http%E8%AF%B7%E6%B1%82%E8%B5%B0%E7%A7%81/" target="_self">
         <div>
-          
+          漏洞成因keep-alive 与 pipeline为了缓解源站的压力，一般会在用户和后端服务器（源站）之间加设前置服务器，用以缓存、简单校验、负载均衡等，而前置服务器与后端服务器往往是在可靠的网络域中，ip 也是相对固定的，所以可以重用 TCP 连接来减少频繁 TCP 握手带来的开销。这里就用到了 HTTP1.1 中的 Keep-Alive 和 Pipeline 特性：  所谓 Keep-Aliv
         </div>
       </a>
 
